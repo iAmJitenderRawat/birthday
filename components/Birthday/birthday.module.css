@@ -18,7 +18,7 @@
 .animate{
     text-align: center;
     animation-name: zoom;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
 }
