@@ -6,7 +6,11 @@ import Image from "next/image";
 export default function BirthdayComponent({ onButtonClick, isShowing }) {
   return (
     <div className={css.card}>
-      {!isShowing && <Button className={css.button} onClick={onButtonClick}>Click me</Button>}
+      {!isShowing && (
+        <Button className={css.button} onClick={onButtonClick}>
+          Click me
+        </Button>
+      )}
       {isShowing && (
         <div className={css.animate}>
           {/* You can add a cake image or description here */}
@@ -16,7 +20,10 @@ export default function BirthdayComponent({ onButtonClick, isShowing }) {
             width={300}
             height={300}
           />
-          <h2 className={css.center}>Happy Birthday!</h2>
+          <h2 className={css.center}>
+            Happy Birthday {process.env.NEXT_PUBLIC_NAME}!
+          </h2>
+          <p>From Jitender</p>
         </div>
       )}
     </div>
